@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Casa Grandes Pottery Sherds</title>
+	<style>
+		body {
+			background-image: url("https://drive.google.com/uc?id=1n6FCvPqv5aOewIRHnxFqI7pUgGAO2-TU");
+			background-size: cover;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 3rem;
+			margin-top: -3rem; /* 将标题向上挪动3rem */
+			color: #0A3139; /* 将标题文字颜色改为#0A3139 */
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 2rem;
+			margin-top: 1rem; /* 将第二行向上挪动1rem */
+			color: #0A3139; /* 将第二行文字颜色改为#0A3139 */
+			text-align: center;
+		}
+
+		audio {
+			width: 80%;
+			margin-top: 2rem; /* 将音频向上挪动2rem */
+		}
+
+		@media screen and (max-width: 480px) {
+			h1 {
+				font-size: 2rem;
+				margin-top: -2rem; /* 将标题向上挪动2rem */
+			}
+
+			h2 {
+				font-size: 1.5rem;
+				margin-top: 0.5rem; /* 将第二行向上挪动0.5rem */
+			}
+
+			audio {
+				width: 100%;
+				margin-top: 1rem; /* 将音频向上挪动1rem */
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Casa Grandes Pottery Sherds</h1>
+	<h2>listen to the block printing process</h2>
+	<audio id="audio" src="https://drive.google.com/uc?id=1qsHH5NGm7GoaLpkcHpW1pTfnQP6F_o_x"></audio>
+	<button onclick="playAudio()">Play Audio</button>
+	<script>
+		function playAudio() {
+			var audio = document.getElementById("audio");
+			audio.play();
+		}
+	</script>
+</body>
+</html>
